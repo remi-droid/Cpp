@@ -10,6 +10,15 @@ Polaire::Polaire(double angleStart, double distanceStart):angle(angleStart), dis
 Polaire::Polaire():Polaire(0.0, 0.0){}
 
 Polaire::Polaire(const Cartesien & c){
+
+/*
+    std::cout << "Cartésien x : " << c.getX() << " y : " << c.getY() << std::endl;
+
+    std::cout << "on est ici" << std::endl;
+    std::cout << "on est ici" << std::endl;
+    std::cout << "on est ici" << std::endl;
+*/
+
     c.convertir(*this);
 }
 

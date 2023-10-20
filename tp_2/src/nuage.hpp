@@ -24,7 +24,7 @@ template <typename T> class Nuage
         Nuage<T>(const Nuage<T> &);
         ~Nuage<T>();
 
-        int size() const; 
+        int size() const;
         typename Nuage<T>::const_iterator begin() const;
         typename Nuage<T>::const_iterator end() const;
 
@@ -48,8 +48,8 @@ typename Nuage<T>::const_iterator Nuage<T>::end() const{
 
 
 template <typename T> 
-void Nuage<T>::ajouter(const T & cartesien){
-    points.push_back(cartesien);
+void Nuage<T>::ajouter(const T & element){
+    points.push_back(element);
 }
 
 template <typename T> 
@@ -73,27 +73,30 @@ std::ostream& operator<<(std::ostream& os, const Polaire &p)
 template <typename T>
 T barycentre_v1(const Nuage<T> & n){
 
-    // Cartesien tmp(0,0); 
-
     double sumX = 0.0;
     double sumY = 0.0;
+    int i = 0; 
 
-    std::cout << "je vais echouer ici\n";
     if (n.size() > 0)
     {
+        
         for (typename Nuage<T>::const_iterator it = n.begin(); it != n.end(); it++)
         {
-            Polaire tmp{(*it)};
-            sumX += tmp.getAngle();
-            sumY += tmp.getDistance();
+
+            std::cout <<"i vaut " << i  << std::endl;
+            
+            Cartesien tmp{(*it)};
+            sumX += tmp.getX();
+            sumY += tmp.getY();
+            
+            i++;
         }
 
-        sumX /= n.size();
-        sumY /= n.size();
-        // tmp = Cartesien(sumX, sumY);
+        sumX /= (double) n.size();
+        sumY /= (double) n.size();
     }
 
-    return T(Polaire(sumX, sumY));
+    return T(Cartesien(sumX, sumY));
 }
 
 

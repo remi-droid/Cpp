@@ -1,9 +1,8 @@
 CMakeFiles/tp2_nuage.dir/src/point.cpp.o: \
- /home/remigiraudon/Documents/zz3/Cpp/tp_2/src/point.cpp \
- /usr/include/stdc-predef.h \
- /home/remigiraudon/Documents/zz3/Cpp/tp_2/src/point.hpp \
- /usr/include/c++/11/sstream /usr/include/c++/11/istream \
- /usr/include/c++/11/ios /usr/include/c++/11/iosfwd \
+ /mnt/c/UCA_2023-2024/C++/tp_2/src/point.cpp /usr/include/stdc-predef.h \
+ /mnt/c/UCA_2023-2024/C++/tp_2/src/point.hpp /usr/include/c++/11/sstream \
+ /usr/include/c++/11/istream /usr/include/c++/11/ios \
+ /usr/include/c++/11/iosfwd \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
