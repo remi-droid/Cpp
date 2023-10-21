@@ -11,7 +11,14 @@ Cartesien::Cartesien():Cartesien(0.0, 0.0){}
 
 Cartesien::Cartesien(const Cartesien & c):x(c.x), y(c.y){}
 
-Cartesien::Cartesien(const Polaire & p){p.convertir(*this);}
+Cartesien::Cartesien(const Polaire & p){
+    
+    //p.convertir(*this);
+    
+    x = p.getDistance() * cos(p.getAngle() * M_PI / 180);
+    y = p.getDistance() * sin(p.getAngle() * M_PI / 180);
+
+}
 
 void Cartesien::convertir(Polaire & p) const{
 

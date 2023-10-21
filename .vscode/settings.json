@@ -139,5 +139,6 @@
     "xtr1common": "cpp",
     "xtree": "cpp",
     "xutility": "cpp"
-  }
+  },
+  "cmake.sourceDirectory": "C:/UCA_2023-2024/C++/tp_2"
 }

@@ -75,7 +75,7 @@ T barycentre_v1(const Nuage<T> & n){
 
     double sumX = 0.0;
     double sumY = 0.0;
-    int i = 0; 
+    double i = 0; 
 
     if (n.size() > 0)
     {
@@ -92,12 +92,37 @@ T barycentre_v1(const Nuage<T> & n){
             i++;
         }
 
-        sumX /= (double) n.size();
-        sumY /= (double) n.size();
+        std::cout << "Somme x : " << sumX << std::endl; 
+        std::cout << "Somme y : " << sumY << std::endl; 
+
+        sumX /= i;
+        sumY /= i;
     }
 
     return T(Cartesien(sumX, sumY));
 }
+
+Polaire barycentre_v1(const Nuage<Polaire> &n)
+{
+    double sumAngle = 0.0;
+    double sumDistance = 0.0;
+
+    if (n.size() > 0){
+
+        for (typename Nuage<Polaire>::const_iterator it = n.begin(); it != n.end(); it++)
+        {
+            sumAngle += (*it).getAngle();
+            sumDistance+= (*it).getDistance();
+        }
+
+        sumAngle /= n.size();
+        sumDistance /= n.size(); 
+    }
+
+
+    return Polaire {sumAngle, sumDistance};
+}
+
 
 
 #endif
