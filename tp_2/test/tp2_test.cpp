@@ -5,6 +5,8 @@
 #include<iostream>
 
 #include <nuage.hpp>
+#include <cartesien.hpp>
+#include <polaire.hpp>
 
 // Tests //-----------------------------------------------------------------------------------------
 

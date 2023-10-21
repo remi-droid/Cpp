@@ -1,0 +1,3 @@
+/mnt/c/UCA_2023-2024/C++/tp_3/build/CMakeFiles/tp3_test.dir
+/mnt/c/UCA_2023-2024/C++/tp_3/build/CMakeFiles/edit_cache.dir
+/mnt/c/UCA_2023-2024/C++/tp_3/build/CMakeFiles/rebuild_cache.dir
