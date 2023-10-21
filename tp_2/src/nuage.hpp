@@ -75,25 +75,16 @@ T barycentre_v1(const Nuage<T> & n){
 
     double sumX = 0.0;
     double sumY = 0.0;
-    double i = 0; 
 
     if (n.size() > 0)
     {
         
         for (typename Nuage<T>::const_iterator it = n.begin(); it != n.end(); it++)
         {
-
-            std::cout <<"i vaut " << i  << std::endl;
-            
             Cartesien tmp{(*it)};
             sumX += tmp.getX();
             sumY += tmp.getY();
-            
-            i++;
         }
-
-        std::cout << "Somme x : " << sumX << std::endl; 
-        std::cout << "Somme y : " << sumY << std::endl; 
 
         sumX /= i;
         sumY /= i;
@@ -121,6 +112,28 @@ Polaire barycentre_v1(const Nuage<Polaire> &n)
 
 
     return Polaire {sumAngle, sumDistance};
+}
+
+template < template <typename> typename conteneur, typename T>
+T barycentre_v2(const conteneur<T> &n)
+{
+    double sumX = 0, sumY = 0;
+
+    if (n.size() > 0)
+    {
+        for(auto element : n)
+        {
+            Cartesien p{element};
+            sumX += p.getX();
+            sumY += p.getY();
+        }
+
+        sumX /= n.size();
+        sumY /= n.size(); 
+    }
+
+    Cartesien barycentre{sumX, sumY};
+    return T{barycentre};
 }
 
 

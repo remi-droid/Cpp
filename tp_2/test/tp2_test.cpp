@@ -126,7 +126,7 @@ TEST_CASE ( "TP2_Nuage::BarycentrePolaire_V2" ) {
  Polaire p4(34,56);
 
  Polaire b1 = barycentre_v1(n);
- 
+
  REQUIRE ( b1.getAngle() == Approx(0.0) );
  REQUIRE ( b1.getDistance() == Approx(0.0) );
 
@@ -153,7 +153,7 @@ TEST_CASE ( "TP2_Nuage::BarycentrePolaire_V2" ) {
 
 
 //------------------------------------------------------------------------------------------------ 5
-/*TEST_CASE ( "TP2_Nuage::BarycentreCartesien_V2" ) {
+TEST_CASE ( "TP2_Nuage::BarycentreCartesien_V2" ) {
  Nuage<Cartesien> n;
 
  Cartesien p1(12,34);
@@ -181,10 +181,10 @@ TEST_CASE ( "TP2_Nuage::BarycentrePolaire_V2" ) {
 
  REQUIRE ( b3.getX() == Approx((p1.getX()+p2.getX()+p3.getX()+p4.getX())/4) );
  REQUIRE ( b3.getY() == Approx((p1.getY()+p2.getY()+p3.getY()+p4.getY())/4) );
-}*/
+}
 
 //------------------------------------------------------------------------------------------------ 6
-/*TEST_CASE ( "TP2_Nuage::BarycentreCartesienVecteur" ) {
+TEST_CASE ( "TP2_Nuage::BarycentreCartesienVecteur" ) {
  std::vector<Cartesien> n;
 
  Cartesien p1(12,34);
@@ -212,10 +212,10 @@ TEST_CASE ( "TP2_Nuage::BarycentrePolaire_V2" ) {
 
  REQUIRE ( b3.getX() == Approx((p1.getX()+p2.getX()+p3.getX()+p4.getX())/4) );
  REQUIRE ( b3.getY() == Approx((p1.getY()+p2.getY()+p3.getY()+p4.getY())/4) );
-}*/
+}
 
 //------------------------------------------------------------------------------------------------ 7
-/*TEST_CASE ( "TP2_Nuage::BarycentrePolaire_V2" ) {
+TEST_CASE ( "TP2_Nuage::BarycentrePolaire_V21" ) {
  std::vector<Polaire> n;
 
  Polaire p1(12,34);
@@ -243,6 +243,6 @@ TEST_CASE ( "TP2_Nuage::BarycentrePolaire_V2" ) {
 
  REQUIRE ( b3.getAngle() == Approx(43.017260).epsilon(1e-3) );
  REQUIRE ( b3.getDistance() == Approx(42.159772).epsilon(1e-3) );
-}*/
+}
 
 // Fin //-------------------------------------------------------------------------------------------
