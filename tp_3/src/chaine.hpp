@@ -4,7 +4,6 @@
 #include <sstream>
 #include <iomanip>
 #include "exception.hpp"
-
 #include <demangle.hpp>
 
 template <typename valueType> std::string chaine(valueType originalValue){
@@ -31,5 +30,12 @@ std::string chaine(double originalValue){
     return ss.str();
 
 }
+
+
+template <typename T, typename... Rest>
+std::string chaine(T first, Rest... rest) {
+    return chaine(first) + " " + chaine(rest...);
+}
+
 
 #endif
