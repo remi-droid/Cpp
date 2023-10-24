@@ -6,6 +6,9 @@
 #include "exception.hpp"
 #include <demangle.hpp>
 
+template <typename... ARGS>
+std::string chaine(const std::tuple<ARGS...> & t);
+
 template <typename valueType> std::string chaine(valueType originalValue){
 
     throw ExceptionChaine(originalValue);
@@ -13,8 +16,8 @@ template <typename valueType> std::string chaine(valueType originalValue){
     return "qlskdjqsljkd";
 }
 
-std::string chaine(std::string originalValue){
-
+std::string chaine(std::string originalValue)
+{
     return originalValue;
 }
 
@@ -37,5 +40,16 @@ std::string chaine(T first, Rest... rest) {
     return chaine(first) + " " + chaine(rest...);
 }
 
+template <typename T,size_t... Is>
+std::string chaine_bis(const T & t, std::index_sequence<Is...>)
+{   
+    return chaine(std::get<Is>(t)...);
+}
+
+template <typename... ARGS>
+std::string chaine(const std::tuple<ARGS...> & t)
+{ 
+    return chaine_bis(t,std::make_index_sequence<sizeof...(ARGS)>());
+}
 
 #endif

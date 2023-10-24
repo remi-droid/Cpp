@@ -627,8 +627,11 @@ CMakeFiles/tp3_test.dir/test/tp3_test.cpp.o: ../test/tp3_test.cpp \
   /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/c++/11/bits/quoted_string.h \
   ../src/exception.hpp \
-  ../src/exception.hpp
+  ../src/exception.hpp \
+  ../src/all_fomulas.hpp
 
+
+../src/all_fomulas.hpp:
 
 ../src/exception.hpp:
 
