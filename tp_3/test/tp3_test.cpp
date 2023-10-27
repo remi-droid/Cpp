@@ -8,9 +8,6 @@
 #include "exception.hpp"
 #include "all_fomulas.hpp"
 
-//#include <cosinus.hpp>
-//#include <exponentielle.hpp>
-
 // Tests //-----------------------------------------------------------------------------------------
 
 template <typename T> std::string type_name(T && x) { return demangle(typeid(x).name()); }
@@ -232,10 +229,10 @@ TEST_CASE ( "TP3_Metaprog::Cosinus" ) {
 }
 
 //----------------------------------------------------------------------------------------------- 11
-/*TEST_CASE ( "TP3_Metaprog::Sinus" ) {
+TEST_CASE ( "TP3_Metaprog::Sinus" ) {
  REQUIRE ( Sinus<3>::valeur(0.0) == Approx(std::sin(0.0)).epsilon(1e-3) );
  REQUIRE ( Sinus<5>::valeur(-2.0) == Approx(std::sin(-2.0)).epsilon(1e-3) );
  REQUIRE ( Sinus<4>::valeur(1.0) == Approx(std::sin(1.0)).epsilon(1e-3) );
-}*/
+}
 
 // Fin //-------------------------------------------------------------------------------------------
