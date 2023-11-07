@@ -1,0 +1,60 @@
+Mouchard : 
+
+1/6
+
+    1 constructeur adhoc
+
+2/6
+
+    1 constructeur adhoc
+
+3/6
+
+    1 Constructeur par copie
+
+4/6
+
+    1 Constructeur de mouvement
+
+5/6
+
+    1 Affectation par copie
+
+6/6
+
+    1 Constructeur ad hoc 
+    1 Affectation par mouvement
+
+
+Vecteur sans mouvement : 
+
+1/6
+
+    20 Constructeurs par défaut
+
+2/6 
+
+    20 Constructeurs ad hoc
+    20 Affectations par mouvement
+
+3/6
+
+    10 Constructeurs par défaut
+    10 Affectations par copie
+
+4/6
+
+    20 Constructeurs par défaut
+    10 Constructeurs de copie
+    10 Affectation par mouvement
+
+5/6
+
+    10 Constructeur ad-hoc
+    20 Constructeur par défaut
+    10 Affectations par défaut
+    10 Affectations par mouvement
+
+6/6
+
+

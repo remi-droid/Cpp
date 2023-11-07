@@ -6,7 +6,6 @@ template <int N> class Factorielle {public: static const long valeur = N * Facto
 
 template <> class Factorielle<0> { public: static const long valeur = 1;};
 
-
 // POWER
 template <int N> class Puissance {public: static const double valeur(double v){return v * Puissance<N-1>::valeur(v);}};
 
