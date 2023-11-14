@@ -34,7 +34,7 @@ int main(void) {
  std::cout << std::endl << "v4 = " << v4 << std::endl;
  complexe_t::stats();
 
- Vecteur v5;
+ Vecteur v5; 
 
  v5=v1*(v2+v4);
 

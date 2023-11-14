@@ -48,6 +48,17 @@ class Vecteur {
 
    return *this;
   }
+
+  //-------------------------------------------------------------------------------Affectation mouvement
+  Vecteur & operator=(Vecteur && v) {
+    tableau_ = nullptr;
+    taille_ = 0;
+    std::swap(tableau_,v.tableau_);
+    std::swap(taille_,v.taille_);
+    return *this;
+  }
+
+
 };
 
 // Surcharge operateurs //--------------------------------------------------------------------------

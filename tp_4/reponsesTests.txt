@@ -44,17 +44,53 @@ Vecteur sans mouvement :
 
 4/6
 
-    20 Constructeurs par défaut
-    10 Constructeurs de copie
-    10 Affectation par mouvement
+    20 constructeurs par défaut
+    10 Constructeur adhoc
+    10 Affectations par mouvement
+    10 affectations par copie
+
 
 5/6
 
-    10 Constructeur ad-hoc
-    20 Constructeur par défaut
-    10 Affectations par défaut
-    10 Affectations par mouvement
+    10 affectations par copie
+    20 affectations par mouvement
+    20 Constructeur ad-hoc
+    30 Constructeur par défaut  
 
 6/6
 
+    10 constructeurs par copie
 
+
+
+    
+Avec mouvement : 
+
+1/6 :
+
+    20 constructeurs par défaut 
+
+2/6 : 
+
+    20 Constructeurs ad hoc
+    20 Affectations par mouvement
+
+3/6 : 
+    
+    10 Constructeurs par défaut
+    10 Affectations par copie
+
+4/6 : 
+
+    20 const def 
+    10 const adhoc
+    10 affec mouvement
+
+5/6 : 
+
+    20 affectations par mouvement
+    20 Constructeur ad-hoc
+    30 Constructeur par défaut  
+
+6/6 : 
+    10 constructions par copie
