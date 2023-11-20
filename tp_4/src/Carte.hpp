@@ -3,11 +3,17 @@
 
 class Carte{
 
-    short int valeur;
+    int valeur;
+    Carte(int newVal):valeur(newVal){}
 
     public : 
+        
+        Carte(const Carte & c) = delete;
+        int getValeur(){return valeur;}
+        Carte & operator=(const Carte & c)=delete;
 
-        Carte(int newVal):valeur(newVal){}
-
+        friend class UsineCarte;
 };
+
+
 #endif
