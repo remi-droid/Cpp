@@ -19,10 +19,11 @@ set ( PROJECT_HEADERS
       #src/comparateur.hpp
       #src/echantillon.hpp
       #src/histogramme.hpp
-      #src/valeur.hpp
+      src/valeur.hpp
     )
 
 set ( PROJECT_SOURCES
+      src/valeur.cpp
     )
 
 set ( TEST_HEADERS

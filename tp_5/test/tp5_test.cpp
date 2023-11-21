@@ -1,7 +1,7 @@
 // Entetes //---------------------------------------------------------------------------------------
 #include "catch.hpp"
-
 #include <cmath>
+#include "valeur.hpp"
 
 //#include <histogramme.hpp>
 //#include <comparateur.hpp>
@@ -12,23 +12,23 @@
 // Tests //-----------------------------------------------------------------------------------------
 
 //------------------------------------------------------------------------------------------------ 1
-/*TEST_CASE ( "TP5_Valeur::Constructeur" ) {
+TEST_CASE ( "TP5_Valeur::Constructeur" ) {
  const double a = 12.0;
 
  Valeur v(a);
 
  REQUIRE ( v.getNombre() == Approx(a) );
-}*/
+}
 
 //------------------------------------------------------------------------------------------------ 2
-/*TEST_CASE ( "TP5_Valeur::ConstructeurDefaut" ) {
+TEST_CASE ( "TP5_Valeur::ConstructeurDefaut" ) {
  Valeur v;
 
  REQUIRE ( v.getNombre() == Approx(0.0) );
-}*/
+}
 
 //------------------------------------------------------------------------------------------------ 3
-/*TEST_CASE ( "TP5_Valeur::Accesseurs" ) {
+TEST_CASE ( "TP5_Valeur::Accesseurs" ) {
  const double a = 12.0;
 
  Valeur v(13.0);
@@ -36,21 +36,21 @@
  v.setNombre(a);
 
  REQUIRE ( v.getNombre() == Approx(a) );
-}*/
+}
 
 //------------------------------------------------------------------------------------------------ 4
-/*TEST_CASE ( "TP5_Valeur::AccesseursConstants" ) {
+TEST_CASE ( "TP5_Valeur::AccesseursConstants" ) {
  const Valeur v;
 
  REQUIRE ( v.getNombre() == Approx(0.0) );
-}*/
+}
 
 //------------------------------------------------------------------------------------------------ 5
-/*TEST_CASE ( "TP5_Echantillon::Constructeur" ) {
+TEST_CASE ( "TP5_Echantillon::Constructeur" ) {
  Echantillon e;
 
  REQUIRE ( e.getTaille() == 0u );
-}*/
+}
 
 //------------------------------------------------------------------------------------------------ 6
 /*TEST_CASE ( "TP5_Echantillon::Ajout" ) {
