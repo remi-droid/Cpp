@@ -26,7 +26,12 @@ class UsineCarte{
 };
 
 
-void remplir(const paquet_t & paquet, UsineCarte & UsineCarte ){}
+void remplir(paquet_t & paquet, UsineCarte & usineCarte ){
+
+    for (std::unique_ptr<Carte> carte = usineCarte.getCarte(); carte != nullptr; carte = usineCarte.getCarte()){
+        paquet.push_back(std::move(carte));
+    }
+}
 
 
 #endif
