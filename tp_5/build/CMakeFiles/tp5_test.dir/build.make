@@ -90,10 +90,16 @@ tp5_test_OBJECTS = \
 # External object files for target tp5_test
 tp5_test_EXTERNAL_OBJECTS = \
 "/mnt/c/UCA_2023-2024/C++/tp_5/build/CMakeFiles/common.dir/src/valeur.cpp.o" \
+"/mnt/c/UCA_2023-2024/C++/tp_5/build/CMakeFiles/common.dir/src/echantillon.cpp.o" \
+"/mnt/c/UCA_2023-2024/C++/tp_5/build/CMakeFiles/common.dir/src/classe.cpp.o" \
+"/mnt/c/UCA_2023-2024/C++/tp_5/build/CMakeFiles/common.dir/src/histo.cpp.o" \
 "/mnt/c/UCA_2023-2024/C++/tp_5/build/CMakeFiles/test.dir/test/catch.cpp.o"
 
 tp5_test: CMakeFiles/tp5_test.dir/test/tp5_test.cpp.o
 tp5_test: CMakeFiles/common.dir/src/valeur.cpp.o
+tp5_test: CMakeFiles/common.dir/src/echantillon.cpp.o
+tp5_test: CMakeFiles/common.dir/src/classe.cpp.o
+tp5_test: CMakeFiles/common.dir/src/histo.cpp.o
 tp5_test: CMakeFiles/test.dir/test/catch.cpp.o
 tp5_test: CMakeFiles/tp5_test.dir/build.make
 tp5_test: CMakeFiles/tp5_test.dir/link.txt

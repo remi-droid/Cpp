@@ -11,6 +11,11 @@ class Echantillon{
     public : 
 
         Echantillon();
+        int getTaille() const;
+        void ajouter(int nouvelleValeur);
+        const Valeur & getMinimum() const;
+        const Valeur & getMaximum() const;
+        Valeur getValeur(int index) const;
         
 
 };

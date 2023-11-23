@@ -83,7 +83,52 @@ CMakeFiles/common.dir/src/valeur.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/common.dir/src/valeur.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/UCA_2023-2024/C++/tp_5/src/valeur.cpp -o CMakeFiles/common.dir/src/valeur.cpp.s
 
+CMakeFiles/common.dir/src/echantillon.cpp.o: CMakeFiles/common.dir/flags.make
+CMakeFiles/common.dir/src/echantillon.cpp.o: /mnt/c/UCA_2023-2024/C++/tp_5/src/echantillon.cpp
+CMakeFiles/common.dir/src/echantillon.cpp.o: CMakeFiles/common.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/UCA_2023-2024/C++/tp_5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/common.dir/src/echantillon.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/common.dir/src/echantillon.cpp.o -MF CMakeFiles/common.dir/src/echantillon.cpp.o.d -o CMakeFiles/common.dir/src/echantillon.cpp.o -c /mnt/c/UCA_2023-2024/C++/tp_5/src/echantillon.cpp
+
+CMakeFiles/common.dir/src/echantillon.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/common.dir/src/echantillon.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/UCA_2023-2024/C++/tp_5/src/echantillon.cpp > CMakeFiles/common.dir/src/echantillon.cpp.i
+
+CMakeFiles/common.dir/src/echantillon.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/common.dir/src/echantillon.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/UCA_2023-2024/C++/tp_5/src/echantillon.cpp -o CMakeFiles/common.dir/src/echantillon.cpp.s
+
+CMakeFiles/common.dir/src/classe.cpp.o: CMakeFiles/common.dir/flags.make
+CMakeFiles/common.dir/src/classe.cpp.o: /mnt/c/UCA_2023-2024/C++/tp_5/src/classe.cpp
+CMakeFiles/common.dir/src/classe.cpp.o: CMakeFiles/common.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/UCA_2023-2024/C++/tp_5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/common.dir/src/classe.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/common.dir/src/classe.cpp.o -MF CMakeFiles/common.dir/src/classe.cpp.o.d -o CMakeFiles/common.dir/src/classe.cpp.o -c /mnt/c/UCA_2023-2024/C++/tp_5/src/classe.cpp
+
+CMakeFiles/common.dir/src/classe.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/common.dir/src/classe.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/UCA_2023-2024/C++/tp_5/src/classe.cpp > CMakeFiles/common.dir/src/classe.cpp.i
+
+CMakeFiles/common.dir/src/classe.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/common.dir/src/classe.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/UCA_2023-2024/C++/tp_5/src/classe.cpp -o CMakeFiles/common.dir/src/classe.cpp.s
+
+CMakeFiles/common.dir/src/histo.cpp.o: CMakeFiles/common.dir/flags.make
+CMakeFiles/common.dir/src/histo.cpp.o: /mnt/c/UCA_2023-2024/C++/tp_5/src/histo.cpp
+CMakeFiles/common.dir/src/histo.cpp.o: CMakeFiles/common.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/UCA_2023-2024/C++/tp_5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/common.dir/src/histo.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/common.dir/src/histo.cpp.o -MF CMakeFiles/common.dir/src/histo.cpp.o.d -o CMakeFiles/common.dir/src/histo.cpp.o -c /mnt/c/UCA_2023-2024/C++/tp_5/src/histo.cpp
+
+CMakeFiles/common.dir/src/histo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/common.dir/src/histo.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/UCA_2023-2024/C++/tp_5/src/histo.cpp > CMakeFiles/common.dir/src/histo.cpp.i
+
+CMakeFiles/common.dir/src/histo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/common.dir/src/histo.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/UCA_2023-2024/C++/tp_5/src/histo.cpp -o CMakeFiles/common.dir/src/histo.cpp.s
+
 common: CMakeFiles/common.dir/src/valeur.cpp.o
+common: CMakeFiles/common.dir/src/echantillon.cpp.o
+common: CMakeFiles/common.dir/src/classe.cpp.o
+common: CMakeFiles/common.dir/src/histo.cpp.o
 common: CMakeFiles/common.dir/build.make
 .PHONY : common
 

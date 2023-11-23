@@ -2,6 +2,9 @@
 #include "catch.hpp"
 #include <cmath>
 #include "valeur.hpp"
+#include "echantillon.hpp"
+#include "classe.hpp"
+#include "histo.hpp"
 
 //#include <histogramme.hpp>
 //#include <comparateur.hpp>
@@ -53,7 +56,7 @@ TEST_CASE ( "TP5_Echantillon::Constructeur" ) {
 }
 
 //------------------------------------------------------------------------------------------------ 6
-/*TEST_CASE ( "TP5_Echantillon::Ajout" ) {
+TEST_CASE ( "TP5_Echantillon::Ajout" ) {
  Echantillon e;
 
  double v[] = { 5.0, 10.0, 15.0, 20.0 };
@@ -61,10 +64,10 @@ TEST_CASE ( "TP5_Echantillon::Constructeur" ) {
  for (unsigned i = 0; i<4; ++i) e.ajouter(v[i]);
 
  REQUIRE ( e.getTaille() == 4u );
-}*/
+}
 
 //------------------------------------------------------------------------------------------------ 7
-/*TEST_CASE ( "TP5_Echantillon::MinMax" ) {
+TEST_CASE ( "TP5_Echantillon::MinMax" ) {
  Echantillon e;
 
  double v[] = { 5.0, 10.0, 15.0, 20.0 };
@@ -79,10 +82,10 @@ TEST_CASE ( "TP5_Echantillon::Constructeur" ) {
 
  REQUIRE ( e.getMinimum().getNombre() == Approx(min) );
  REQUIRE ( e.getMaximum().getNombre() == Approx(max) );
-}*/
+}
 
 //------------------------------------------------------------------------------------------------ 8
-/*TEST_CASE ( "TP5_Echantillon::MinMaxException" ) {
+TEST_CASE ( "TP5_Echantillon::MinMaxException" ) {
  Echantillon e;
 
  int error = 0;
@@ -102,10 +105,10 @@ TEST_CASE ( "TP5_Echantillon::Constructeur" ) {
  catch (...) { error=1; }
 
  REQUIRE ( error == 2 );
-}*/
+}
 
 //------------------------------------------------------------------------------------------------ 9
-/*TEST_CASE ( "TP5_Echantillon::Indice" ) {
+TEST_CASE ( "TP5_Echantillon::Indice" ) {
  Echantillon e;
 
  double v[] = { 5.0, 10.0, 15.0, 20.0 };
@@ -129,10 +132,10 @@ TEST_CASE ( "TP5_Echantillon::Constructeur" ) {
  catch (...) { error=1; }
 
  REQUIRE ( error == 2 );
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 10
-/*TEST_CASE ( "TP5_Classe::Constructeur" ) {
+TEST_CASE ( "TP5_Classe::Constructeur" ) {
  const double a = 12.0;
  const double b = 24.0;
 
@@ -141,10 +144,10 @@ TEST_CASE ( "TP5_Echantillon::Constructeur" ) {
  REQUIRE ( c.getBorneInf() == Approx(a) );
  REQUIRE ( c.getBorneSup() == Approx(b) );
  REQUIRE ( c.getQuantite() == 0u );
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 11
-/*TEST_CASE ( "TP5_Classe::Accesseurs" ) {
+TEST_CASE ( "TP5_Classe::Accesseurs" ) {
  const double   a = 12.0;
  const double   b = 24.0;
  const unsigned n = 7;
@@ -162,10 +165,10 @@ TEST_CASE ( "TP5_Echantillon::Constructeur" ) {
  c.ajouter();
 
  REQUIRE ( c.getQuantite() == n+1 );
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 12
-/*TEST_CASE ( "TP5_Histogramme::Constructeur" ) {
+TEST_CASE ( "TP5_Histogramme::Constructeur" ) {
  Histo h(5.0,15.0,5);
 
  double bornesInf[] = { 5.0, 7.0,  9.0, 11.0, 13.0 };
@@ -181,10 +184,10 @@ TEST_CASE ( "TP5_Echantillon::Constructeur" ) {
   REQUIRE ( c.getQuantite() == 0u );
   ++i;
  }
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 13
-/*TEST_CASE ( "TP5_Histogramme::Echantillon" ) {
+TEST_CASE ( "TP5_Histogramme::Echantillon" ) {
  double v[] = { 7.0, 9.0, 8.0, 5.0, 10.0, 14.0, 13.0, 6.0, 5.5, 13.5 };
  double n[] = { 3, 2, 2, 0, 3 };
 
@@ -203,10 +206,10 @@ TEST_CASE ( "TP5_Echantillon::Constructeur" ) {
  for (const Classe & c : h.getClasses()) {
   REQUIRE ( c.getQuantite() == Approx(n[i++]) );
  }
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 14
-/*TEST_CASE ( "TP5_Histogramme::Generique" ) {
+TEST_CASE ( "TP5_Histogramme::Generique" ) {
  using histo_t = Histogramme<>;
 
  histo_t h(5.0,15.0,5);
@@ -224,7 +227,7 @@ TEST_CASE ( "TP5_Echantillon::Constructeur" ) {
   REQUIRE ( c.getQuantite() == 0u );
   ++i;
  }
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 15
 /*TEST_CASE ( "TP5_Histogramme::FoncteurGreater" ) {

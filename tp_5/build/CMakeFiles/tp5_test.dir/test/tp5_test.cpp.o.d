@@ -211,4 +211,10 @@ CMakeFiles/tp5_test.dir/test/tp5_test.cpp.o: \
  /usr/include/c++/11/bits/random.tcc /usr/include/c++/11/numeric \
  /usr/include/c++/11/bits/stl_numeric.h \
  /usr/include/c++/11/pstl/glue_numeric_defs.h \
- /mnt/c/UCA_2023-2024/C++/tp_5/src/valeur.hpp
+ /mnt/c/UCA_2023-2024/C++/tp_5/src/valeur.hpp \
+ /mnt/c/UCA_2023-2024/C++/tp_5/src/echantillon.hpp \
+ /mnt/c/UCA_2023-2024/C++/tp_5/src/valeur.hpp \
+ /mnt/c/UCA_2023-2024/C++/tp_5/src/classe.hpp \
+ /mnt/c/UCA_2023-2024/C++/tp_5/src/histo.hpp \
+ /mnt/c/UCA_2023-2024/C++/tp_5/src/classe.hpp \
+ /mnt/c/UCA_2023-2024/C++/tp_5/src/echantillon.hpp

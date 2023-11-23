@@ -16,14 +16,19 @@ endif ()
 set ( PROJECT_HEADERS
       src/exemple.hpp
       #src/classe.hpp
+      src/classe.hpp
       #src/comparateur.hpp
-      #src/echantillon.hpp
+      src/histo.hpp
+      src/echantillon.hpp
       #src/histogramme.hpp
       src/valeur.hpp
     )
 
 set ( PROJECT_SOURCES
       src/valeur.cpp
+      src/echantillon.cpp
+      src/classe.cpp
+      src/histo.cpp
     )
 
 set ( TEST_HEADERS

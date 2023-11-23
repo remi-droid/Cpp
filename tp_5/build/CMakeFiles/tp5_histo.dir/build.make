@@ -89,10 +89,16 @@ tp5_histo_OBJECTS = \
 
 # External object files for target tp5_histo
 tp5_histo_EXTERNAL_OBJECTS = \
-"/mnt/c/UCA_2023-2024/C++/tp_5/build/CMakeFiles/common.dir/src/valeur.cpp.o"
+"/mnt/c/UCA_2023-2024/C++/tp_5/build/CMakeFiles/common.dir/src/valeur.cpp.o" \
+"/mnt/c/UCA_2023-2024/C++/tp_5/build/CMakeFiles/common.dir/src/echantillon.cpp.o" \
+"/mnt/c/UCA_2023-2024/C++/tp_5/build/CMakeFiles/common.dir/src/classe.cpp.o" \
+"/mnt/c/UCA_2023-2024/C++/tp_5/build/CMakeFiles/common.dir/src/histo.cpp.o"
 
 tp5_histo: CMakeFiles/tp5_histo.dir/src/main_histo.cpp.o
 tp5_histo: CMakeFiles/common.dir/src/valeur.cpp.o
+tp5_histo: CMakeFiles/common.dir/src/echantillon.cpp.o
+tp5_histo: CMakeFiles/common.dir/src/classe.cpp.o
+tp5_histo: CMakeFiles/common.dir/src/histo.cpp.o
 tp5_histo: CMakeFiles/tp5_histo.dir/build.make
 tp5_histo: CMakeFiles/tp5_histo.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/UCA_2023-2024/C++/tp_5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable tp5_histo"

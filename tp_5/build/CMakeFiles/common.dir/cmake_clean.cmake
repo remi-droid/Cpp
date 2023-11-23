@@ -1,4 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/common.dir/src/classe.cpp.o"
+  "CMakeFiles/common.dir/src/classe.cpp.o.d"
+  "CMakeFiles/common.dir/src/echantillon.cpp.o"
+  "CMakeFiles/common.dir/src/echantillon.cpp.o.d"
+  "CMakeFiles/common.dir/src/histo.cpp.o"
+  "CMakeFiles/common.dir/src/histo.cpp.o.d"
   "CMakeFiles/common.dir/src/valeur.cpp.o"
   "CMakeFiles/common.dir/src/valeur.cpp.o.d"
 )

@@ -168,6 +168,78 @@ tp5_test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp5_test.dir/build.make CMakeFiles/tp5_test.dir/build
 .PHONY : tp5_test/fast
 
+src/classe.o: src/classe.cpp.o
+.PHONY : src/classe.o
+
+# target to build an object file
+src/classe.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/classe.cpp.o
+.PHONY : src/classe.cpp.o
+
+src/classe.i: src/classe.cpp.i
+.PHONY : src/classe.i
+
+# target to preprocess a source file
+src/classe.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/classe.cpp.i
+.PHONY : src/classe.cpp.i
+
+src/classe.s: src/classe.cpp.s
+.PHONY : src/classe.s
+
+# target to generate assembly for a file
+src/classe.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/classe.cpp.s
+.PHONY : src/classe.cpp.s
+
+src/echantillon.o: src/echantillon.cpp.o
+.PHONY : src/echantillon.o
+
+# target to build an object file
+src/echantillon.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/echantillon.cpp.o
+.PHONY : src/echantillon.cpp.o
+
+src/echantillon.i: src/echantillon.cpp.i
+.PHONY : src/echantillon.i
+
+# target to preprocess a source file
+src/echantillon.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/echantillon.cpp.i
+.PHONY : src/echantillon.cpp.i
+
+src/echantillon.s: src/echantillon.cpp.s
+.PHONY : src/echantillon.s
+
+# target to generate assembly for a file
+src/echantillon.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/echantillon.cpp.s
+.PHONY : src/echantillon.cpp.s
+
+src/histo.o: src/histo.cpp.o
+.PHONY : src/histo.o
+
+# target to build an object file
+src/histo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/histo.cpp.o
+.PHONY : src/histo.cpp.o
+
+src/histo.i: src/histo.cpp.i
+.PHONY : src/histo.i
+
+# target to preprocess a source file
+src/histo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/histo.cpp.i
+.PHONY : src/histo.cpp.i
+
+src/histo.s: src/histo.cpp.s
+.PHONY : src/histo.s
+
+# target to generate assembly for a file
+src/histo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/histo.cpp.s
+.PHONY : src/histo.cpp.s
+
 src/main_histo.o: src/main_histo.cpp.o
 .PHONY : src/main_histo.o
 
@@ -276,6 +348,15 @@ help:
 	@echo "... test"
 	@echo "... tp5_histo"
 	@echo "... tp5_test"
+	@echo "... src/classe.o"
+	@echo "... src/classe.i"
+	@echo "... src/classe.s"
+	@echo "... src/echantillon.o"
+	@echo "... src/echantillon.i"
+	@echo "... src/echantillon.s"
+	@echo "... src/histo.o"
+	@echo "... src/histo.i"
+	@echo "... src/histo.s"
 	@echo "... src/main_histo.o"
 	@echo "... src/main_histo.i"
 	@echo "... src/main_histo.s"
