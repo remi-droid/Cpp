@@ -2,6 +2,7 @@
 #define HISTO_TP5_HPP
 
 #include <vector>
+#include <set>
 #include "classe.hpp"
 #include "echantillon.hpp"
 

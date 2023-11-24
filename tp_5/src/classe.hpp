@@ -19,6 +19,9 @@ class Classe{
         void setQuantite(double a);
         void ajouter();
 
+        bool operator<(const Classe & classeCmp) const;
+        bool operator>(const Classe & classeCmp) const;
+
 };
 
 

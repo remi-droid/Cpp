@@ -27,3 +27,17 @@ void Classe::setQuantite(double a){
 void Classe::ajouter(){
     quantite++;
 }
+
+bool operator<(const Classe & a, const Classe & b){
+    return a.getBorneInf() < b.getBorneInf();
+}
+
+
+bool Classe::operator<(const Classe & classeCmp) const {
+    return getBorneInf() < classeCmp.getBorneInf();
+}   
+
+
+bool Classe::operator>(const Classe & classeCmp) const {
+    return getBorneInf() > classeCmp.getBorneInf();
+}  
