@@ -2,6 +2,7 @@
 #define HISTOGRAMME_TP5_HPP
 
 #include <set>
+#include <map>
 #include <iostream>
 #include "classe.hpp"
 #include "echantillon.hpp"
@@ -28,6 +29,8 @@ template <typename T=std::less<Classe>>
 class Histogramme{
     
     std::set<Classe, T> classes;
+
+    //std::multimap<Classe, Valeur, T> classes;
 
     public : 
 
