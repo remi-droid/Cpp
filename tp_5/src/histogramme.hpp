@@ -30,7 +30,7 @@ class Histogramme{
     
     std::set<Classe, T> classes;
 
-    //std::multimap<Classe, Valeur, T> classes;
+    std::multimap<Classe, Valeur> classesMultimap;
 
     public : 
 
@@ -41,6 +41,8 @@ class Histogramme{
         std::set<Classe, T> getClasses() const;
         void ajouter(Echantillon e);
         void ajouter(double e);
+        std::multimap<Classe, Valeur> getValeurs() const; 
+        auto getValeurs(const Classe & c) const;
 };
 
 
@@ -70,6 +72,7 @@ void Histogramme<T>::ajouter(Echantillon e) {
             Classe elementRetrieved = (*rightClasse);
             classes.erase(rightClasse);
             elementRetrieved.ajouter();
+            classesMultimap.insert(std::make_pair(elementRetrieved, Valeur(valeurEchantillon)));
             classes.insert(elementRetrieved);
         }
     }
@@ -86,6 +89,7 @@ void Histogramme<T>::ajouter(double valeur) {
         Classe elementRetrieved = (*rightClasse);
         classes.erase(rightClasse);
         elementRetrieved.ajouter();
+        classesMultimap.insert(std::make_pair(elementRetrieved, Valeur(valeur)));
         classes.insert(elementRetrieved);
     }
 
@@ -97,6 +101,17 @@ Histogramme<T>::Histogramme(const Histogramme<A> & histo){
     for (auto c : histo.getClasses())
         classes.insert(c);
 }
+
+template <typename T>
+std::multimap<Classe, Valeur> Histogramme<T>::getValeurs() const{
+    return classesMultimap;
+} 
+
+template <typename T>
+auto Histogramme<T>::getValeurs(const Classe & c) const{
+    return classesMultimap.equal_range(c);
+} 
+
 
 
 #endif
