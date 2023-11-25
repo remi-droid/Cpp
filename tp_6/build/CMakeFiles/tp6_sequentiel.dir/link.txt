@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wall -Wextra -pedantic -pthread  CMakeFiles/tp6_sequentiel.dir/src/sequentiel.cpp.o -o tp6_sequentiel 

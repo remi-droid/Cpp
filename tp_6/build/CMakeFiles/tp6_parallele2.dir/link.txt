@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wall -Wextra -pedantic -pthread  CMakeFiles/tp6_parallele2.dir/src/parallele2.cpp.o -o tp6_parallele2 

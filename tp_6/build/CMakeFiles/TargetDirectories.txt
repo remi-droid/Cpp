@@ -1,0 +1,6 @@
+/mnt/c/UCA_2023-2024/C++/tp_6/build/CMakeFiles/common.dir
+/mnt/c/UCA_2023-2024/C++/tp_6/build/CMakeFiles/tp6_sequentiel.dir
+/mnt/c/UCA_2023-2024/C++/tp_6/build/CMakeFiles/tp6_parallele.dir
+/mnt/c/UCA_2023-2024/C++/tp_6/build/CMakeFiles/tp6_parallele2.dir
+/mnt/c/UCA_2023-2024/C++/tp_6/build/CMakeFiles/edit_cache.dir
+/mnt/c/UCA_2023-2024/C++/tp_6/build/CMakeFiles/rebuild_cache.dir
