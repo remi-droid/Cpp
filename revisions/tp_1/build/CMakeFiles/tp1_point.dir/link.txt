@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wall -Wextra -pedantic  CMakeFiles/tp1_point.dir/src/main_point.cpp.o -o tp1_point 

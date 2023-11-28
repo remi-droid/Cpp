@@ -31,7 +31,6 @@ void for_sequentiel(int debut, int fin, Callable && func){
     for (std::thread& t : threads) {
         t.join();
     }
-
 }
 
 

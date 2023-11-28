@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wall -Wextra -pedantic  CMakeFiles/tp1_vecteur.dir/src/main_vecteur.cpp.o -o tp1_vecteur 
