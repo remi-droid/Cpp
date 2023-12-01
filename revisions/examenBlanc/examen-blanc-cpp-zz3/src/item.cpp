@@ -15,4 +15,8 @@ int Item::getPrix() const{
     return prix;
 }
 
+void Item::setPrix(int prixN){
+    prix = prixN;
+}
+
 bool Item::estVendable() const {return prix > 0;}

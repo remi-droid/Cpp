@@ -14,10 +14,12 @@ class Arme : public Item {
 
         Arme(std::string nom, int prix, int durabilite);
         Arme(const Arme & autreArme);
+        Arme(Arme && autreArme);
         std::string getNom() const;
         void utiliser();
         Enchantement * getEnchantement() const;
         void enchanter(Enchantement * enchant);
+        Arme & operator=(Arme && autreArme);
 
 
         class DestroyedItemException : public std::exception {

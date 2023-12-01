@@ -1,4 +1,4 @@
-# Install script for directory: /home/remigiraudon/Documents/zz3/C++/Cpp/revisions/examenBlanc/examen-blanc-cpp-zz3
+# Install script for directory: /mnt/c/UCA_2023-2024/C++/revisions/examenBlanc/examen-blanc-cpp-zz3
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/remigiraudon/Documents/zz3/C++/Cpp/revisions/examenBlanc/examen-blanc-cpp-zz3/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/c/UCA_2023-2024/C++/revisions/examenBlanc/examen-blanc-cpp-zz3/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

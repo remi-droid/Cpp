@@ -4,8 +4,9 @@
 
 #include "item.hpp"
 #include "arme.hpp"
+#include "inventaire.hpp"
 
-//using Inv = Inventaire;
+using Inv = Inventaire;
 //using Inv = Inventaire<TrieurAlphabetique>;
 
 /*
@@ -109,7 +110,7 @@ TEST_CASE ( "Arme:Constructeur copie" ) {
  * Test 8 & 9 : Déplacement
  * Cette partie n'est pas au programme pour le TP noté (Décembre 2020)
  */
-/*
+
 TEST_CASE ( "Arme:Constructeur déplacement" ) {
     Enchantement * enchantement = new Enchantement(3.2f);
     Arme epeeVictime("Excalibur", 3, 10);
@@ -123,17 +124,17 @@ TEST_CASE ( "Arme:Constructeur déplacement" ) {
 
     // Autre manière de vérifier la présence du constructeur, mais pas de vérifier son bon fonctionnement.
     REQUIRE (std::is_move_constructible<Arme>::value);
-}*/
-/*
+}
+
 TEST_CASE ( "Arme:Affectation par déplacement" ) {
     // J'ai pas trouver mieux, essayer de la faire bien cette redéfinition d'opérateur.
     REQUIRE (std::is_move_assignable<Arme>::value);
-}*/
+}
 
 /*
  * Test 10 : Un container
  */
-/*
+
 TEST_CASE ( "Inventaire:Stokage" ) {
     Inv inventaire;
     Item bestBook("Effectiv Modern C++", 15);
@@ -145,19 +146,19 @@ TEST_CASE ( "Inventaire:Stokage" ) {
     REQUIRE (inventaire.getTaille() == 1);
 
     REQUIRE (inventaire2.getTaille() == 0);
-}*/
+}
 
 /*
  * Test 11 : Enum
  */
-/*
+
 TEST_CASE ( "Inventaire:Catégorie" ) {
     Inv::Categorie categorie = Inv::Categorie::ARME; 
 
     REQUIRE ( static_cast<char>(categorie) == 'A' );
     REQUIRE ( static_cast<char>(Inv::Categorie::CONSOMMABLE) == 'C' );
     REQUIRE ( static_cast<char>(Inv::Categorie::RARE) == 'R' );
-}*/
+}
 
 /*
  * Test 12 : Catégorisation des items de l'inventaire
