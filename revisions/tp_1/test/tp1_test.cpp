@@ -22,12 +22,12 @@ TEST_CASE ( "TP1_Polaire::Constructeur" ) {
 }
 
 //------------------------------------------------------------------------------------------------ 2
-/*TEST_CASE ( "TP1_Polaire::ConstructeurDefaut" ) {
+TEST_CASE ( "TP1_Polaire::ConstructeurDefaut" ) {
  Polaire p;
 
  REQUIRE ( p.getAngle() == Approx(0.0) );
  REQUIRE ( p.getDistance() == Approx(0.0) );
-}*/
+}
 
 //------------------------------------------------------------------------------------------------ 3
 /*TEST_CASE ( "TP1_Polaire::Accesseurs" ) {
